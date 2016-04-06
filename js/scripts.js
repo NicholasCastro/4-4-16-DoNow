@@ -7,8 +7,12 @@ $(".animate-on-mouseenter").on("mouseenter", function() {
 
 $(".animate-on-mouseenter-2").on("mouseenter", function() {
 	$(this).toggleClass("animated fadeIn");
+}).on("mouseleave", function() {
+	$(this).toggleClass("animated fadeIn");
 });
 
 $(".animate-on-mouseenter-3").on("mouseenter", function() {
+	$(this).toggleClass("animated pulse");
+}).on("mouseleave", function() {
 	$(this).toggleClass("animated pulse");
 });
